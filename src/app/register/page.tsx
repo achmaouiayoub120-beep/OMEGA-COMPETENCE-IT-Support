@@ -321,17 +321,10 @@ export default function RegisterPage() {
                       {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <>Finaliser l'inscription <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" /></>}
                     </Button>
 
-                    <div className="relative flex items-center justify-center my-4">
-                      <div className="absolute inset-0 flex items-center">
-                        <div className="w-full border-t border-white/10"></div>
-                      </div>
-                      <span className="relative z-10 px-3 bg-[#0a0a0c] text-[9px] font-mono uppercase tracking-widest text-white/40">ou</span>
-                    </div>
-
                     <Button 
                       type="button"
                       variant="outline"
-                      className="w-full h-12 rounded-xl font-bold text-sm border-white/10 hover:bg-white/5 flex items-center justify-center gap-2 text-foreground transition-all duration-300"
+                      className="w-full h-12 rounded-xl font-bold text-sm border-white/10 hover:bg-white/5 flex items-center justify-center gap-2 text-foreground transition-all duration-300 mt-3"
                     >
                       <svg className="h-4 w-4" viewBox="0 0 24 24">
                         <path
