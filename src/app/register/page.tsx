@@ -14,7 +14,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Loader2, ShieldCheck, ArrowRight, Check, X, Sparkles, UserCheck, Eye, EyeOff } from "lucide-react";
+import { Loader2, ShieldCheck, ArrowRight, ArrowLeft, Check, X, Sparkles, UserCheck, Eye, EyeOff } from "lucide-react";
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 import { HoloLock } from "@/components/HoloLock";
@@ -210,6 +210,14 @@ export default function RegisterPage() {
               onMouseLeave={handleMouseLeave}
               className="bento-card glass-panel p-8 sm:p-10 relative overflow-hidden"
             >
+              <button
+                onClick={() => router.push("/")}
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6 group"
+              >
+                <ArrowLeft className="h-3.5 w-3.5 group-hover:-translate-x-1 transition-transform" />
+                Retour à la connexion
+              </button>
+
               <div className="flex justify-center mb-8">
                 <Image 
                   src="/omega-logo.png" alt="OMEGA" width={180} height={55} 
